@@ -5,6 +5,7 @@
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
+    transition: 0.5s;
 }
 :root{
     --bg-color: #222327;
@@ -16,6 +17,7 @@ body{
     min-width: 100vh;
     background: var(--bg-color);
     color: var(--text-color);
+    position: relative;
 }
 .title{
     color: var(--main-color);
@@ -147,11 +149,95 @@ header{
 }
 /* Main */
 main{
-    margin-top: calc(20vh - 50px);
+    margin-top: calc(30vh - 50px);
     margin-left: 50px;
+    margin-right: 60px;
+}
+main h1{
+    color: var(--main-color);
+}
+main p{
+    color: var(--text-color);
+    text-align: justify;
+}
+.img{
+    width: 500px;
+    padding: 0 50px;
+    float: right;
+    
 }
 .second-title{
-    margin-top: calc(20vh - 50px);
+    margin-top: calc(60vh - 50px);
+    text-align: center;
+}
+.second-title p{
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.duoc{
+    height: 80px;
+    margin-bottom: 1rem;
+}
+.social-icons-container, .footer-menu-conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #F2F2F2;
+    background-image: url(images/facebook_3wsyfkcbx571_512.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+.social-icon :hover{
+    background-color: #121212;
+    filter: invert(1);
+}
+.social-icon:nth-of-type(2){
+    background-image: url(images/logotipo_de_instagram_vtyznosn9smg_512.png);
+}
+.social-icon:nth-of-type(3){
+    background-image: url(images/linkedin_3fvka74uj72m_512.png);
+}
+.social-icon:nth-of-type(4){
+    background-image: url(images/gorjeo_9ditnmju4soi_512.png);
+}
+.social-icon:nth-of-type(5){
+    background-image: url(images/youtube_logo_p8jinx2ddg6g_512.png);
+}
+
+.footer-menu-conteiner{
+    list-style-type: none;
+    color: #F2F2F2;
+    font-size: 18px;
+}
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.copyright{
+    color: var(--text-color);
+    opacity: 0.3;
     text-align: center;
 }
 
