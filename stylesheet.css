@@ -235,6 +235,7 @@ footer{
     margin: 1rem 1.5rem;
     cursor: pointer;
     opacity: 0.6;
+    color: var(--text-color);
 }
 .copyright{
     color: var(--text-color);
@@ -263,33 +264,47 @@ footer{
     #menu-icon{
         display: block;
     }
-    .navbar{
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        width: 270px;
-        height: 29vh;
-        background:var(--main-color) ;  
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        border-radius: 10px;
-        transition: all .50s ease;
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box;
     }
-    .navbar a{
-        display: block;
-        margin: 12px 0;
-        padding: 0px 25px;
-        transition: all .50s ease;
+    body{
+        display: inline;
+    }
+    header{
+        position: relative;
+        width: auto ;
+    }
+    .navbar{
+        display: none   ;
     }
     .navbar a:hover{
         color: var(--text-color);
         transform: translateY(5px);
     }
-    .navbar a.active{
-        color: var(--text-color);
+
+    .banner{
+        position: relative;
+        width: 45vh;
     }
-    .navbar.open{
-        right: 2%;
+    footer{
+        position: relative;
+        width: auto;
+
     }
+   
+
+    .p{
+        display: inline;
+    }
+    .foto{
+        display: grid;
+        
+    }
+    .img{
+        width: 260px;
+        height: 30vh;
+    }
+
 }
